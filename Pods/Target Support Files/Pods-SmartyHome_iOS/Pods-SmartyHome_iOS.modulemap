@@ -1,0 +1,6 @@
+framework module Pods_SmartyHome_iOS {
+  umbrella header "Pods-SmartyHome_iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

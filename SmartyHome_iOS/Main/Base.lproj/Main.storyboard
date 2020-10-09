@@ -44,7 +44,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDx-dV-8kz">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EDx-dV-8kz">
                                 <rect key="frame" x="100" y="557" width="175" height="50"/>
                                 <color key="backgroundColor" red="0.015686274509803921" green="0.4823529411764706" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>

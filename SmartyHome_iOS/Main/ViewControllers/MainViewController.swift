@@ -19,6 +19,7 @@ class MainViewController: UIViewController {
     }
     
     func setUPUI(){
+        userNameTextField.delegate = self
         continueButton.layer.cornerRadius = 5
         continueButton.clipsToBounds = true
     }
@@ -31,3 +32,12 @@ class MainViewController: UIViewController {
     }
 }
 
+extension MainViewController: UITextFieldDelegate{
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField.text!.isEmpty{
+            continueButton.isEnabled = false
+        }else{
+            continueButton.isEnabled = true
+        }
+    }
+}
