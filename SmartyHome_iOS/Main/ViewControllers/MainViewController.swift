@@ -15,8 +15,13 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUPUI()
     }
     
+    func setUPUI(){
+        continueButton.layer.cornerRadius = 5
+        continueButton.clipsToBounds = true
+    }
     
     @IBAction func ContinueButtonClicked(_ sender: Any) {
         let userName = userNameTextField.text
