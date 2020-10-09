@@ -16,6 +16,12 @@
 		6E7FE1CA25305D3200E48DAC /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7FE1C925305D3200E48DAC /* Helper.swift */; };
 		6E7FE1D025305F8C00E48DAC /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E7FE1CF25305F8C00E48DAC /* Home.storyboard */; };
 		6E7FE1D22530600F00E48DAC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7FE1D12530600F00E48DAC /* HomeViewController.swift */; };
+		6E7FE1D52530686C00E48DAC /* RoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7FE1D32530686C00E48DAC /* RoomTableViewCell.swift */; };
+		6E7FE1D62530686C00E48DAC /* RoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E7FE1D42530686C00E48DAC /* RoomTableViewCell.xib */; };
+		6E7FE1D925306AE200E48DAC /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7FE1D825306AE200E48DAC /* UITableView.swift */; };
+		6E7FE1DB25306C7500E48DAC /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7FE1DA25306C7500E48DAC /* ShadowView.swift */; };
+		6E7FE1DD2530750A00E48DAC /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7FE1DC2530750A00E48DAC /* Room.swift */; };
+		6E7FE1E0253075C300E48DAC /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7FE1DF253075C300E48DAC /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +36,12 @@
 		6E7FE1C925305D3200E48DAC /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		6E7FE1CF25305F8C00E48DAC /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		6E7FE1D12530600F00E48DAC /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6E7FE1D32530686C00E48DAC /* RoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomTableViewCell.swift; sourceTree = "<group>"; };
+		6E7FE1D42530686C00E48DAC /* RoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomTableViewCell.xib; sourceTree = "<group>"; };
+		6E7FE1D825306AE200E48DAC /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		6E7FE1DA25306C7500E48DAC /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
+		6E7FE1DC2530750A00E48DAC /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		6E7FE1DF253075C300E48DAC /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +74,7 @@
 		6E6F6C1A252E010D00CDA765 /* SmartyHome_iOS */ = {
 			isa = PBXGroup;
 			children = (
+				6E7FE1D725306A8200E48DAC /* Extensions */,
 				6E7FE1CB25305DA200E48DAC /* Helpers */,
 				6E7FE1C425305B8700E48DAC /* Home */,
 				6E7FE1C825305BDC00E48DAC /* Main */,
@@ -80,6 +93,7 @@
 				6E7FE1C525305B9100E48DAC /* ViewModels */,
 				6E7FE1C625305B9B00E48DAC /* ViewControllers */,
 				6E7FE1C725305BAD00E48DAC /* Views */,
+				6E7FE1DE2530751000E48DAC /* Models */,
 				6E7FE1CF25305F8C00E48DAC /* Home.storyboard */,
 			);
 			path = Home;
@@ -88,6 +102,7 @@
 		6E7FE1C525305B9100E48DAC /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				6E7FE1DF253075C300E48DAC /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -103,6 +118,9 @@
 		6E7FE1C725305BAD00E48DAC /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6E7FE1D32530686C00E48DAC /* RoomTableViewCell.swift */,
+				6E7FE1D42530686C00E48DAC /* RoomTableViewCell.xib */,
+				6E7FE1DA25306C7500E48DAC /* ShadowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -146,6 +164,22 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		6E7FE1D725306A8200E48DAC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6E7FE1D825306AE200E48DAC /* UITableView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6E7FE1DE2530751000E48DAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E7FE1DC2530750A00E48DAC /* Room.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7FE1D62530686C00E48DAC /* RoomTableViewCell.xib in Resources */,
 				6E6F6C28252E011200CDA765 /* LaunchScreen.storyboard in Resources */,
 				6E6F6C25252E011200CDA765 /* Assets.xcassets in Resources */,
 				6E6F6C23252E010D00CDA765 /* Main.storyboard in Resources */,
@@ -220,11 +255,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E7FE1D52530686C00E48DAC /* RoomTableViewCell.swift in Sources */,
 				6E7FE1D22530600F00E48DAC /* HomeViewController.swift in Sources */,
 				6E6F6C20252E010D00CDA765 /* MainViewController.swift in Sources */,
+				6E7FE1E0253075C300E48DAC /* HomeViewModel.swift in Sources */,
 				6E6F6C1C252E010D00CDA765 /* AppDelegate.swift in Sources */,
+				6E7FE1DB25306C7500E48DAC /* ShadowView.swift in Sources */,
+				6E7FE1DD2530750A00E48DAC /* Room.swift in Sources */,
 				6E6F6C1E252E010D00CDA765 /* SceneDelegate.swift in Sources */,
 				6E7FE1CA25305D3200E48DAC /* Helper.swift in Sources */,
+				6E7FE1D925306AE200E48DAC /* UITableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

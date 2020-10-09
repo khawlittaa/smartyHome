@@ -29,10 +29,49 @@
                     <view key="view" contentMode="scaleToFill" id="Q2y-gP-ez0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="October, 09 , 2020" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V29-v1-7s2">
+                                <rect key="frame" x="20" y="54" width="146" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="MPD-Yf-T3h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.5568627451" green="0.57254901960000004" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, Foulen !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6p-VG-IqU">
+                                <rect key="frame" x="20" y="85" width="273.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4Ul-WC-LeJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="34"/>
+                                <color key="textColor" red="0.050980392159999999" green="0.070588235289999995" blue="0.08235294118" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mRl-6J-SZj">
+                                <rect key="frame" x="20" y="135" width="374" height="727"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="E6p-VG-IqU" firstAttribute="leading" secondItem="elf-pT-y7a" secondAttribute="leading" constant="20" id="CTc-7h-REu"/>
+                            <constraint firstItem="mRl-6J-SZj" firstAttribute="leading" secondItem="elf-pT-y7a" secondAttribute="leading" constant="20" id="Hqg-KH-048"/>
+                            <constraint firstItem="V29-v1-7s2" firstAttribute="leading" secondItem="elf-pT-y7a" secondAttribute="leading" constant="20" id="Q3c-AM-r5n"/>
+                            <constraint firstItem="E6p-VG-IqU" firstAttribute="top" secondItem="V29-v1-7s2" secondAttribute="bottom" constant="10" id="VJx-MA-9nM"/>
+                            <constraint firstItem="elf-pT-y7a" firstAttribute="trailing" secondItem="mRl-6J-SZj" secondAttribute="trailing" constant="20" id="hvW-3D-QXy"/>
+                            <constraint firstItem="mRl-6J-SZj" firstAttribute="top" secondItem="E6p-VG-IqU" secondAttribute="bottom" constant="20" id="vlI-Ok-gPW"/>
+                            <constraint firstItem="elf-pT-y7a" firstAttribute="bottom" secondItem="mRl-6J-SZj" secondAttribute="bottom" id="z4L-PR-MKa"/>
+                            <constraint firstItem="V29-v1-7s2" firstAttribute="top" secondItem="elf-pT-y7a" secondAttribute="top" constant="10" id="zSV-4B-M8w"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="elf-pT-y7a"/>
                     </view>
                     <navigationItem key="navigationItem" id="LIU-7v-dYD"/>
+                    <connections>
+                        <outlet property="roomsTableView" destination="mRl-6J-SZj" id="5pI-qG-g9n"/>
+                        <outlet property="todayDateLabel" destination="V29-v1-7s2" id="65y-ff-ThA"/>
+                        <outlet property="welcomeUserLabel" destination="E6p-VG-IqU" id="9Ne-Rj-p7G"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cPR-Bz-vUa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,3 +7,16 @@
 //
 
 import Foundation
+
+class Room {
+    
+    var roomName: String
+    var numberDevices: Int
+    var roomImageName: String
+    
+    init(roomName: String, numberDevices: Int, roomImageName: String) {
+        self.roomName = roomName
+        self.numberDevices = numberDevices
+        self.roomImageName = roomImageName
+    }
+}

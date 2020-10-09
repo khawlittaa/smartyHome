@@ -6,4 +6,13 @@
 //  Copyright © 2020 Think-it. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension UITableView{
+    
+    func registerCell(nib: String, cellreuseIdentifier: String) {
+        let  basicInfoCell = UINib(nibName: nib, bundle: nil)
+        self.register(basicInfoCell, forCellReuseIdentifier: cellreuseIdentifier)
+    }
+    
+}

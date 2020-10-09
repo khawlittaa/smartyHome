@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleAspectFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RoomTableViewCell" rowHeight="183" id="KGk-i7-Jjw" customClass="RoomTableViewCell" customModule="SmartyHome_iOS" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="183"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="183"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oLI-Up-zzx" customClass="ShadowView" customModule="SmartyHome_iOS" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="391" height="173"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bedroom" translatesAutoresizingMaskIntoConstraints="NO" id="9io-OF-Dbp">
+                                <rect key="frame" x="0.0" y="0.0" width="391" height="173"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bedroom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lms-dT-6IZ">
+                                <rect key="frame" x="10" y="123" width="70" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.97254901959999995" green="0.98039215690000003" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 devices" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmj-lR-29Z">
+                                <rect key="frame" x="10" y="148" width="55" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="15" id="0wf-Nj-ENO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.97254901959999995" green="0.98039215690000003" blue="0.97647058819999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Xmj-lR-29Z" secondAttribute="bottom" constant="10" id="2k2-F6-gDL"/>
+                            <constraint firstItem="Xmj-lR-29Z" firstAttribute="leading" secondItem="oLI-Up-zzx" secondAttribute="leading" constant="10" id="I8d-7d-vF0"/>
+                            <constraint firstItem="Xmj-lR-29Z" firstAttribute="top" secondItem="lms-dT-6IZ" secondAttribute="bottom" constant="4" id="gPv-64-yUB"/>
+                            <constraint firstItem="lms-dT-6IZ" firstAttribute="leading" secondItem="oLI-Up-zzx" secondAttribute="leading" constant="10" id="mrZ-Fc-82H"/>
+                            <constraint firstAttribute="bottom" secondItem="9io-OF-Dbp" secondAttribute="bottom" id="oWL-2A-fbS"/>
+                            <constraint firstAttribute="trailing" secondItem="9io-OF-Dbp" secondAttribute="trailing" id="rwT-Nd-Ss1"/>
+                            <constraint firstItem="9io-OF-Dbp" firstAttribute="top" secondItem="oLI-Up-zzx" secondAttribute="top" id="tE2-Tj-GyL"/>
+                            <constraint firstItem="9io-OF-Dbp" firstAttribute="leading" secondItem="oLI-Up-zzx" secondAttribute="leading" id="xur-F6-w4L"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="oLI-Up-zzx" secondAttribute="bottom" constant="10" id="Hol-AJ-VUi"/>
+                    <constraint firstItem="oLI-Up-zzx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="LOg-FL-omo"/>
+                    <constraint firstAttribute="trailing" secondItem="oLI-Up-zzx" secondAttribute="trailing" id="Rj1-od-tdE"/>
+                    <constraint firstItem="oLI-Up-zzx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rra-9b-jIK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="numberDevicesLabel" destination="Xmj-lR-29Z" id="1mZ-bm-dFQ"/>
+                <outlet property="roomImageView" destination="9io-OF-Dbp" id="5cM-Ma-1nQ"/>
+                <outlet property="roomNameLabel" destination="lms-dT-6IZ" id="dop-qM-6KW"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="61.941964285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="bedroom" width="200" height="137"/>
+    </resources>
+</document>
